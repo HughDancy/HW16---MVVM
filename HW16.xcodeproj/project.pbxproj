@@ -14,6 +14,7 @@
 		D8AE09DE28D9EE0D0064AEC0 /* HW16.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8AE09DC28D9EE0D0064AEC0 /* HW16.xcdatamodeld */; };
 		D8AE09E028D9EE0F0064AEC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AE09DF28D9EE0F0064AEC0 /* Assets.xcassets */; };
 		D8AE09E328D9EE0F0064AEC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8AE09E128D9EE0F0064AEC0 /* LaunchScreen.storyboard */; };
+		D8AE09EE28D9F3D90064AEC0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AE09ED28D9F3D90064AEC0 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D8AE09DF28D9EE0F0064AEC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8AE09E228D9EE0F0064AEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8AE09E428D9EE0F0064AEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8AE09ED28D9F3D90064AEC0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,57 @@
 		D8AE09D228D9EE0D0064AEC0 /* HW16 */ = {
 			isa = PBXGroup;
 			children = (
+				D8AE09F028D9F61A0064AEC0 /* Resources */,
+				D8AE09EF28D9F5CF0064AEC0 /* Aplication */,
+				D8AE09EC28D9F37D0064AEC0 /* ViewModels */,
+				D8AE09EB28D9F3630064AEC0 /* Views */,
+				D8AE09EA28D9F3440064AEC0 /* Models */,
+				D8AE09D928D9EE0D0064AEC0 /* Main.storyboard */,
+				D8AE09E128D9EE0F0064AEC0 /* LaunchScreen.storyboard */,
+			);
+			path = HW16;
+			sourceTree = "<group>";
+		};
+		D8AE09EA28D9F3440064AEC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE09ED28D9F3D90064AEC0 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8AE09EB28D9F3630064AEC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8AE09D728D9EE0D0064AEC0 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8AE09EC28D9F37D0064AEC0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D8AE09EF28D9F5CF0064AEC0 /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
 				D8AE09D328D9EE0D0064AEC0 /* AppDelegate.swift */,
 				D8AE09D528D9EE0D0064AEC0 /* SceneDelegate.swift */,
-				D8AE09D728D9EE0D0064AEC0 /* ViewController.swift */,
-				D8AE09D928D9EE0D0064AEC0 /* Main.storyboard */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		D8AE09F028D9F61A0064AEC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D8AE09DF28D9EE0F0064AEC0 /* Assets.xcassets */,
-				D8AE09E128D9EE0F0064AEC0 /* LaunchScreen.storyboard */,
 				D8AE09E428D9EE0F0064AEC0 /* Info.plist */,
 				D8AE09DC28D9EE0D0064AEC0 /* HW16.xcdatamodeld */,
 			);
-			path = HW16;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +187,7 @@
 				D8AE09D828D9EE0D0064AEC0 /* ViewController.swift in Sources */,
 				D8AE09D428D9EE0D0064AEC0 /* AppDelegate.swift in Sources */,
 				D8AE09D628D9EE0D0064AEC0 /* SceneDelegate.swift in Sources */,
+				D8AE09EE28D9F3D90064AEC0 /* User.swift in Sources */,
 				D8AE09DE28D9EE0D0064AEC0 /* HW16.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9KN879RV4D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW16/Info.plist;
+				INFOPLIST_FILE = HW16/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9KN879RV4D;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW16/Info.plist;
+				INFOPLIST_FILE = HW16/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
