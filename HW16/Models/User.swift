@@ -34,3 +34,5 @@ extension User {
         
     ]
 }
+
+var someUsers = [User(name: "Someone", userImage: "keanu", dateOfBirth: "01.01.1991", profession: "no one knows", popularProject: "nothing")]
