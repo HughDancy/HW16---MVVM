@@ -21,7 +21,7 @@ final class ObservableObject<T> {
     init(_ value: T?) {
         self.value = value
     }
-     
+    
     func bind(_ listner: @escaping(T?) -> Void) {
         listner(value)
         self.listner = listner
